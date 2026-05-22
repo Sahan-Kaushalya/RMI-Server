@@ -1,8 +1,8 @@
-package lk.kaushalya.bcd;
+package lk.kaushalya.bcd.client;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface Message extends Remote {
-    public void send() throws RemoteException;
+    public String send() throws RemoteException;
 }
