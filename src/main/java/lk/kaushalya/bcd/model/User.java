@@ -2,18 +2,23 @@ package lk.kaushalya.bcd.model;
 
 import java.io.Serializable;
 
-public class Data implements Serializable {
+public class User implements Serializable {
+
     private int id;
     private String name;
-    private String  role;
+    private String email;
+    private int age;
+    private String role;
 
-    public Data() {
+    public User() {
 
     }
 
-    public Data(int id, String name, String role) {
+    public User(int id, String name, String email, int age, String role) {
         this.id = id;
         this.name = name;
+        this.email = email;
+        this.age = age;
         this.role = role;
     }
 
@@ -31,6 +36,22 @@ public class Data implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getRole() {
